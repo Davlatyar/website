@@ -1,19 +1,25 @@
 .container {
     display: flex;
     gap: 15px;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 
 .box {
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    transform: translate(500px);
+    width: 250px;
+    height: 250px;
     transition: all 1s;
     animation-name: animatsiya;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 .box-1 {
     background-color: blue;
+
 }
 
 .box-2 {
@@ -23,16 +29,30 @@
 @keyframes animatsiya {
     0% {
         background-color: blue;
-    }    
+        transform: rotate(360deg);
+    }
+
     25% {
         background-color: red;
     }
 
     50% {
         background-color: green;
-    }
-    75% {
-        background-color: green;
+        /* transform: translateX(100px); */
     }
 
+    75% {
+        background-color: green;
+        /* transform: translateY(100px); */
+    }
+
+    100% {
+        background-color: black;m
+        /* transform: translateX(100px); */
+    }
+
+}
+
+.images {
+    width: 250px;
 }
