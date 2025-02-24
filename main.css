@@ -1,10 +1,12 @@
 .container {
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
 
 .box {
     border: 1px solid black;
     width: 100px;
     height: 100px;
+    background-color: greeng;
 }
